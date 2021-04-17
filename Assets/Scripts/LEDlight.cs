@@ -19,8 +19,8 @@ public class LEDlight : MonoBehaviour
         if(OVRInput.Get(OVRInput.RawButton.A))
         {
             serialHandler.Write("0");
-        }
-        if(OVRInput.Get(OVRInput.RawButton.B)
+        }   
+        if(OVRInput.Get(OVRInput.RawButton.B))
         {
             serialHandler.Write("1");
         }
