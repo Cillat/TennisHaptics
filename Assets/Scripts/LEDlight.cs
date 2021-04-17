@@ -16,11 +16,11 @@ public class LEDlight : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.A))
+        if(OVRInput.GetDown(OVRInput.RawButton.A))
         {
             serialHandler.Write("0");
         }
-        else if(Input.GetKeyDown(KeyCode.D))
+        if(OVRInput.GetDown(OVRInput.RawButton.B)
         {
             serialHandler.Write("1");
         }
