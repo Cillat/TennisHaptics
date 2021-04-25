@@ -2707,7 +2707,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4109d6599e0d545469f5bc8c59a2b08b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serialHandler: {fileID: 0}
+  serialHandler: {fileID: 7892505154124967016}
 --- !u!1 &7892505154124961449
 GameObject:
   m_ObjectHideFlags: 0
@@ -2776,7 +2776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4109d6599e0d545469f5bc8c59a2b08b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serialHandler: {fileID: 0}
+  serialHandler: {fileID: 7892505154124967016}
 --- !u!1 &7892505154124967009
 GameObject:
   m_ObjectHideFlags: 0
