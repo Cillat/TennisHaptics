@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LEDlight : MonoBehaviour
+public class LedLight : MonoBehaviour
 {
 
     public SerialHandler serialHandler;

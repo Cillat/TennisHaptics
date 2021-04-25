@@ -13,7 +13,7 @@ public class SerialHandler : MonoBehaviour
     //Linuxでは/dev/ttyUSB0
     //windowsではCOM1
     //Macでは/dev/tty.usbmodem1421など
-    public string portName = "/dev/cu.usbmodem141101";
+    public string portName = "COM3";
     public int baudRate = 9600;
 
     private SerialPort serialPort_;
