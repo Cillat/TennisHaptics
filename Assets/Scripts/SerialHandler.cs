@@ -88,11 +88,11 @@ public class SerialHandler : MonoBehaviour
         }
     }
 
-    public void Write(string message)
+    public void Write(byte[] message)
     {
         try
         {
-            serialPort_.Write(message);
+            serialPort_.Write(message, 0, 1);
         }
         catch (System.Exception e)
         {

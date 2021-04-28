@@ -6,8 +6,7 @@ public class TennisHaptics : MonoBehaviour
 {
 
     public SerialHandler serialHandler;
-    private int parameter_int;
-    private string parameter_str;
+    private byte[] parameter;
     private Vector3 tmp;
 
     // Start is called before the first frame update
@@ -22,15 +21,14 @@ public class TennisHaptics : MonoBehaviour
     {
 
         tmp.x = Mathf.Abs(tmp.x) % 180;
-        parameter_int = (int)tmp.x;
-        parameter_str = parameter_int.ToString();
+        parameter[0] = (byte)tmp.x;
     }
 
     private void OnCollisionStay(Collision collision)
     {
         if(collision.gameObject.CompareTag("Racket"))
         {
-            serialHandler.Write(parameter_str);
+            serialHandler.Write(parameter);
         }
     }
 
