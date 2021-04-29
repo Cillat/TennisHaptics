@@ -53,6 +53,10 @@ public class SerialHandler : MonoBehaviour
 
         thread_ = new Thread(Read);
         thread_.Start();
+
+        serialPort_.NewLine = "\n";
+
+        serialPort_.ReadTimeout = 1000;
     }
 
     private void Close()
@@ -90,6 +94,8 @@ public class SerialHandler : MonoBehaviour
 
     public void Write(byte[] message)
     {
+        Debug.Log("SerialHandler Write()" + message[0]);
+
         try
         {
             serialPort_.Write(message, 0, 1);
